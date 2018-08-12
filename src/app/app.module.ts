@@ -9,6 +9,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { UsersComponent } from './users/users.component';
 import { ChatComponent } from './chat/chat.component';
 import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './users/login/login.component';
+import { CreateComponent } from './users/create/create.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { AboutComponent } from './about/about.component';
     ScheduleComponent,
     UsersComponent,
     ChatComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
