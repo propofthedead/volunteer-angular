@@ -11,6 +11,8 @@ import { ChatComponent } from './chat/chat.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './users/login/login.component';
 import { CreateComponent } from './users/create/create.component';
+import { UserEditComponent } from './users/user-edit/user-edit.component';
+import { UserRemoveComponent } from './users/user-remove/user-remove.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { CreateComponent } from './users/create/create.component';
     ChatComponent,
     AboutComponent,
     LoginComponent,
-    CreateComponent
+    CreateComponent,
+    UserEditComponent,
+    UserRemoveComponent
   ],
   imports: [
     BrowserModule,
