@@ -16,9 +16,13 @@ logOutUser():void{
   this.LoggedUser=null;
   console.log("the user is logged out");
 }
-
+checkUser():void{
+  if(this.LoggedUser==null){
+    this.reroute();
+  }
+}
 reroute():void{
-  this.router.navigateByUrl
+  this.router.navigateByUrl('/user/login')
 }
   constructor(private router: Router) { }
 }
