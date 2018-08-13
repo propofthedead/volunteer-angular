@@ -4,6 +4,7 @@ import { listener } from '../../../node_modules/@angular/core/src/render3/instru
 import { Observable } from '../../../node_modules/rxjs';
 import { Json } from '../json';
 import { Event } from './event';
+import { User } from '../users/user';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +29,14 @@ export class EventsvcService {
   }
   remove( event: Event): Observable<Json>{
     return this.http.post(this.url+"Remove",event) as Observable<Json>;
+  }
+
+  addVolunteer(user: User, id:number) : Observable<Json>{
+    return this.http.post(this.url+"AddVolunteer/"+id, user) as Observable<Json>;
+  }
+
+  addAttendance(user: User, id: number) : Observable<Json>{
+    return this.http.post(this.url+"AddAttenace/"+id, user) as Observable<Json>;
   }
   constructor(private http: HttpClient) { }
 }
