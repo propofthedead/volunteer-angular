@@ -18,6 +18,7 @@ import { EventDetailComponent } from './schedule/event-detail/event-detail.compo
 import { EventCreateComponent } from './schedule/event-create/event-create.component';
 import { EventEditComponent } from './schedule/event-edit/event-edit.component';
 import { EventDeleteComponent } from './schedule/event-delete/event-delete.component';
+import { UserListComponent } from './users/user-list/user-list.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { EventDeleteComponent } from './schedule/event-delete/event-delete.compo
     EventDetailComponent,
     EventCreateComponent,
     EventEditComponent,
-    EventDeleteComponent
+    EventDeleteComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
