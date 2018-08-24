@@ -12,7 +12,14 @@ export class UserDetailComponent implements OnInit {
 
   user: User;
 
-
+  edit():void{
+    let id= this.user.Id
+    this.Router.navigateByUrl('/user/edit/:'+id);
+  }
+  delete():void{
+    let id= this.user.Id
+    this.Router.navigateByUrl('/user/delete/:'+id);
+  }
   constructor(private Usesvc: UsersvcService, private Router: Router, private Routed: ActivatedRoute) { }
 
   ngOnInit() {
