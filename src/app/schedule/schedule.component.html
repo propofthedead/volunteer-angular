@@ -10,6 +10,7 @@
         <th>Amount Needed</th>
         <th>Date</th>
         <th>Time</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody *ngFor= "let event of events">
@@ -20,6 +21,7 @@
           <td>{{event.WantedAmountVolunteers}}</td>
           <td></td>
           <td></td>
+          <td><a routerLink='events/detail/:{{event.id}}'>View</a>|<a routerLink='events/edit/:{{event.id}}'>Edit</a>|<a routerLink='events/delete/:{{event.id}}'>Delete</a></td>
         </tr>
     </tbody>
   </table>
