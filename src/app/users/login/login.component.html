@@ -3,11 +3,11 @@
 <div>
   <div>
     <label>Username</label>
-    <input type="text" [(ngModel)]="user.Username">
+    <input id="username" type="text" placeholder="username" required [(ngModel)]="user.Username">
   </div>
   <div>
     <label>Password</label>
-    <input type="password" [(ngModel)]="user.Password">
+    <input id="password" type="password" placeholder="password" required [(ngModel)]="user.Password">
   </div>
   <button (click)="login()">Login</button>
   <span><button (click)="register()">Register</button></span>

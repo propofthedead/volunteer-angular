@@ -13,6 +13,8 @@ export class LoginComponent implements OnInit {
 
   user: User
   message:string;
+  username: string;
+  password: string;
 
 
   login():void{
