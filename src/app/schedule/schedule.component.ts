@@ -11,14 +11,14 @@ export class ScheduleComponent implements OnInit {
 
   events: Event[];
 
-  constructor(private Eventsvc:EventsvcService, private router:Router) { }
+  constructor(private Eventsvc: EventsvcService, private router: Router) { }
 
   ngOnInit() {
     this.Eventsvc.list()
-    .subscribe(resp=>{
-      this.events=resp.Data;
+    .subscribe(resp => {
+      this.events = resp.Data;
       console.log(resp);
-    })
+    });
   }
 
 }

@@ -8,21 +8,21 @@ import { Router } from '../../node_modules/@angular/router';
 export class LogincheckService {
 LoggedUser: User;
 
-logInUser(user:User):void{
-  this.LoggedUser=user;
-  console.log(user.Username + " is logged in");
+logInUser(user: User): void {
+  this.LoggedUser = user;
+  console.log(user.Username + ' is logged in ' );
 }
-logOutUser():void{
-  this.LoggedUser=null;
-  console.log("the user is logged out");
+logOutUser(): void {
+  this.LoggedUser = null;
+  console.log('the user is logged out');
 }
-checkUser():void{
-  if(this.LoggedUser==null){
+checkUser(): void {
+  if (this.LoggedUser == null) {
     this.reroute();
   }
 }
-reroute():void{
-  this.router.navigateByUrl('/user/login')
+reroute(): void {
+  this.router.navigateByUrl('/user/login');
 }
   constructor(private router: Router) { }
 }
